@@ -22,6 +22,10 @@
 		4EFCD1E52A028158004F87BE /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1E42A028158004F87BE /* NetworkType.swift */; };
 		4EFCD1E72A028173004F87BE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1E62A028173004F87BE /* NetworkError.swift */; };
 		4EFCD1EA2A02818B004F87BE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1E92A02818B004F87BE /* NetworkManager.swift */; };
+		4EFCD1EC2A029154004F87BE /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1EB2A029154004F87BE /* NetworkMonitor.swift */; };
+		4EFCD1EE2A029644004F87BE /* PhotoListProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1ED2A029644004F87BE /* PhotoListProtocol .swift */; };
+		4EFCD1F02A0296AA004F87BE /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1EF2A0296AA004F87BE /* DataType.swift */; };
+		4EFCD1F22A029748004F87BE /* PhotoListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F12A029748004F87BE /* PhotoListService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		4EFCD1E42A028158004F87BE /* NetworkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
 		4EFCD1E62A028173004F87BE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4EFCD1E92A02818B004F87BE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4EFCD1EB2A029154004F87BE /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		4EFCD1ED2A029644004F87BE /* PhotoListProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoListProtocol .swift"; sourceTree = "<group>"; };
+		4EFCD1EF2A0296AA004F87BE /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		4EFCD1F12A029748004F87BE /* PhotoListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4E3390BB2A00F27100992071 /* Lesson.swift */,
+				4EFCD1EF2A0296AA004F87BE /* DataType.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -170,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				4EFCD1E32A028135004F87BE /* photoDetailService */,
-				4EFCD1E22A028115004F87BE /* photoService */,
+				4EFCD1E22A028115004F87BE /* photoListService */,
 			);
 			name = "services ";
 			path = "New Group";
@@ -179,6 +188,7 @@
 		4EFCD1D42A028043004F87BE /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				4EFCD1EB2A029154004F87BE /* NetworkMonitor.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -226,11 +236,13 @@
 			path = photodetails;
 			sourceTree = "<group>";
 		};
-		4EFCD1E22A028115004F87BE /* photoService */ = {
+		4EFCD1E22A028115004F87BE /* photoListService */ = {
 			isa = PBXGroup;
 			children = (
+				4EFCD1ED2A029644004F87BE /* PhotoListProtocol .swift */,
+				4EFCD1F12A029748004F87BE /* PhotoListService.swift */,
 			);
-			path = photoService;
+			path = photoListService;
 			sourceTree = "<group>";
 		};
 		4EFCD1E32A028135004F87BE /* photoDetailService */ = {
@@ -370,13 +382,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFCD1F02A0296AA004F87BE /* DataType.swift in Sources */,
+				4EFCD1EC2A029154004F87BE /* NetworkMonitor.swift in Sources */,
 				4EFCD1E52A028158004F87BE /* NetworkType.swift in Sources */,
 				4EFCD1DF2A0280D5004F87BE /* Endpoint.swift in Sources */,
+				4EFCD1EE2A029644004F87BE /* PhotoListProtocol .swift in Sources */,
 				4EFCD1EA2A02818B004F87BE /* NetworkManager.swift in Sources */,
 				4EFCD1D92A028086004F87BE /* Constants .swift in Sources */,
 				4EFCD1DD2A0280C0004F87BE /* URLRequest+init.swift in Sources */,
 				4E9B42C02998372000FB464D /* ContentView.swift in Sources */,
 				4E3390BC2A00F27100992071 /* Lesson.swift in Sources */,
+				4EFCD1F22A029748004F87BE /* PhotoListService.swift in Sources */,
 				4EFCD1E72A028173004F87BE /* NetworkError.swift in Sources */,
 				4E9B42BE2998372000FB464D /* PhotoLessonsApp.swift in Sources */,
 				4EFCD1DB2A02809D004F87BE /* HTTPRequestMethod.swift in Sources */,

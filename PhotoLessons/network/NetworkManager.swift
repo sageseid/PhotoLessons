@@ -13,11 +13,9 @@ enum DecoderConfigurationError: Error {
 }
 
 class NetworkManager: NetworkType {
-    //public var requestTimeOut: Float = 50
     static let sharedInstance = NetworkManager()
     
     func get<T: Decodable>(type: T.Type, endpoint: Endpoint, headers: Headers, decoder: JSONDecoder
-                          // ,timeout: Float?,
                            ) -> AnyPublisher<T, Error>  {
         
         var urlRequest = endpoint.createUrl()
