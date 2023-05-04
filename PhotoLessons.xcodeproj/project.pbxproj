@@ -26,6 +26,7 @@
 		4EFCD1EE2A029644004F87BE /* PhotoListProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1ED2A029644004F87BE /* PhotoListProtocol .swift */; };
 		4EFCD1F02A0296AA004F87BE /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1EF2A0296AA004F87BE /* DataType.swift */; };
 		4EFCD1F22A029748004F87BE /* PhotoListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F12A029748004F87BE /* PhotoListService.swift */; };
+		4EFCD1F42A040872004F87BE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F32A040872004F87BE /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		4EFCD1ED2A029644004F87BE /* PhotoListProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoListProtocol .swift"; sourceTree = "<group>"; };
 		4EFCD1EF2A0296AA004F87BE /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		4EFCD1F12A029748004F87BE /* PhotoListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListService.swift; sourceTree = "<group>"; };
+		4EFCD1F32A040872004F87BE /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				4EFCD1EB2A029154004F87BE /* NetworkMonitor.swift */,
+				4EFCD1F32A040872004F87BE /* Reachability.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				4EFCD1EA2A02818B004F87BE /* NetworkManager.swift in Sources */,
 				4EFCD1D92A028086004F87BE /* Constants .swift in Sources */,
 				4EFCD1DD2A0280C0004F87BE /* URLRequest+init.swift in Sources */,
+				4EFCD1F42A040872004F87BE /* Reachability.swift in Sources */,
 				4E9B42C02998372000FB464D /* ContentView.swift in Sources */,
 				4E3390BC2A00F27100992071 /* Lesson.swift in Sources */,
 				4EFCD1F22A029748004F87BE /* PhotoListService.swift in Sources */,

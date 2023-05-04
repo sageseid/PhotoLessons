@@ -32,6 +32,8 @@ class NetworkManager: NetworkType {
             .tryMap({ (apiResponse) -> T in
                 do {
                     return try decoder.decode(T.self, from: apiResponse.data)
+                }catch {
+                    throw NetworkError.decodeError("Failed to decode response: \(error.localizedDescription)")
                 }
             })  .subscribe(on: DispatchQueue.global(qos: .background))
             .receive(on: DispatchQueue.main)

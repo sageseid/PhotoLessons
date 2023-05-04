@@ -11,12 +11,12 @@ import Combine
 
 struct PhotoStoreResult {
     let dataType: DataType
-    let movieList: [Lesson]?
+    let lessonList: [Lesson]?
     let error: Error?
 }
 
 protocol PhotoListProtocol {
-    var moviesResponseSubject: PassthroughSubject<PhotoStoreResult, Error> { get }
+    var photosResponseSubject: PassthroughSubject<PhotoStoreResult, Error> { get }
     
     func fetchLessonsList()
 }

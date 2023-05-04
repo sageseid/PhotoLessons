@@ -26,7 +26,7 @@ extension URLRequest {
         let url = components.url!
         
         print("url \(url)")
-        self.init(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: timeOut)
+        self.init(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: timeOut)
         self.httpMethod = httpMethod.rawValue
         
     }
