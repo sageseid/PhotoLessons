@@ -8,10 +8,10 @@
 import Foundation
 import Combine
 
-class CacheManager {
+class CacheManager: CachedType {
     static let sharedInstance = CacheManager()
     
-    typealias Headers = [String: Any]
+
     
     func cachedGet<T: Decodable>(type: T.Type, endpoint: Endpoint, headers: Headers, decoder: JSONDecoder) -> AnyPublisher<T, Error> {
         
