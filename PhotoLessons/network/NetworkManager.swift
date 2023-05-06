@@ -25,7 +25,7 @@ class NetworkManager: NetworkType {
                         urlRequest.setValue(value, forHTTPHeaderField: key)
                     }
                 }
-        
+      
         
       return URLSession.shared.dataTaskPublisher(for: urlRequest)
             .mapError { _ in NetworkError.invalidRequest }
@@ -43,4 +43,35 @@ class NetworkManager: NetworkType {
     
 
 
+}
+
+func loadData(url: URL) -> AnyPublisher<[Lesson], Error> {
+    let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 10)
+    
+    return URLSession.shared
+        .dataTaskPublisher(for: request)
+        .tryMap { data, response -> Data in
+            guard let httpResponse = response as? HTTPURLResponse else {
+                throw URLError(.badServerResponse)
+            }
+            
+            if httpResponse.statusCode == 304 {
+                // Data is in cache, return cached data
+                if let cachedResponse = URLCache.shared.cachedResponse(for: request) {
+                    return cachedResponse.data
+                } else {
+                    throw URLError(.badServerResponse)
+                }
+            } else if httpResponse.statusCode == 200 {
+                // Data is not in cache, store response in cache
+                let cachedResponse = CachedURLResponse(response: httpResponse, data: data, userInfo: ["CachedDate": Date()], storagePolicy: .allowed)
+                URLCache.shared.storeCachedResponse(cachedResponse, for: request)
+                return data
+            } else {
+                throw URLError(.badServerResponse)
+            }
+        }
+        .decode(type: [String:[Lesson]].self, decoder: JSONDecoder())
+        .map { $0["lessons"] ?? [] }
+        .eraseToAnyPublisher()
 }

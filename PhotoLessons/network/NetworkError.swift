@@ -9,6 +9,7 @@ import Foundation
 
 enum NetworkError: Error {
     case networkFailureError(String)
+    case badServerResponse(String)
     case apiErrorResponse([String: Any])
     case decodeError(String)
     case invalidRequest

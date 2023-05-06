@@ -19,7 +19,6 @@ protocol NetworkType {
                     endpoint: Endpoint,
                     headers: Headers,
                     decoder: JSONDecoder
-                    //,timeout: Float?
         ) -> AnyPublisher<T, Error> where T: Decodable
     
 }

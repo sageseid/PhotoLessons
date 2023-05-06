@@ -27,6 +27,7 @@
 		4EFCD1F02A0296AA004F87BE /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1EF2A0296AA004F87BE /* DataType.swift */; };
 		4EFCD1F22A029748004F87BE /* PhotoListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F12A029748004F87BE /* PhotoListService.swift */; };
 		4EFCD1F42A040872004F87BE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F32A040872004F87BE /* Reachability.swift */; };
+		4EFCD1F62A04F308004F87BE /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F52A04F308004F87BE /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		4EFCD1EF2A0296AA004F87BE /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		4EFCD1F12A029748004F87BE /* PhotoListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListService.swift; sourceTree = "<group>"; };
 		4EFCD1F32A040872004F87BE /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4EFCD1F52A04F308004F87BE /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				4EFCD1E42A028158004F87BE /* NetworkType.swift */,
 				4EFCD1E62A028173004F87BE /* NetworkError.swift */,
 				4EFCD1E92A02818B004F87BE /* NetworkManager.swift */,
+				4EFCD1F52A04F308004F87BE /* CacheManager.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				4EFCD1DD2A0280C0004F87BE /* URLRequest+init.swift in Sources */,
 				4EFCD1F42A040872004F87BE /* Reachability.swift in Sources */,
 				4E9B42C02998372000FB464D /* ContentView.swift in Sources */,
+				4EFCD1F62A04F308004F87BE /* CacheManager.swift in Sources */,
 				4E3390BC2A00F27100992071 /* Lesson.swift in Sources */,
 				4EFCD1F22A029748004F87BE /* PhotoListService.swift in Sources */,
 				4EFCD1E72A028173004F87BE /* NetworkError.swift in Sources */,

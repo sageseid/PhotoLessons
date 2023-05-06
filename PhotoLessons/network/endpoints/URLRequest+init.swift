@@ -10,7 +10,7 @@ import Foundation
 
 extension URLRequest {
     
-    init(httpMethod: HTTPRequestMethod, path: String, timeOut: Double  ){  //, queries: [String: Any] = [:]) {
+    init(httpMethod: HTTPRequestMethod, path: String, timeOut: Double, cache: CachePolicy){  //, queries: [String: Any] = [:]) {
         
 //        var urlQueryItems = [URLQueryItem(name: "api_key", value: Constants.API.apiKey)]
 //
@@ -26,7 +26,7 @@ extension URLRequest {
         let url = components.url!
         
         print("url \(url)")
-        self.init(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: timeOut)
+        self.init(url: url, cachePolicy: cache, timeoutInterval: timeOut)
         self.httpMethod = httpMethod.rawValue
         
     }

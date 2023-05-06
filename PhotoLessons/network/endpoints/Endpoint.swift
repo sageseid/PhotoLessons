@@ -28,7 +28,7 @@ struct Endpoints {
 //        }
         
         func createUrl() -> URLRequest {
-            return URLRequest(httpMethod: .get, path: "\(path)/\(path2)", timeOut: 60.0)//, queries: ["page": page])
+            return URLRequest(httpMethod: .get, path: "\(path)/\(path2)", timeOut: 60.0, cache: .returnCacheDataElseLoad)//, queries: ["page": page])
         }
     }
     
@@ -41,7 +41,7 @@ struct Endpoints {
         let movieId: String
                 
         func createUrl() -> URLRequest {
-            return URLRequest(httpMethod: .get , path: "\(path)/\(movieId)", timeOut: 60.0)
+            return URLRequest(httpMethod: .get , path: "\(path)/\(movieId)", timeOut: 60.0, cache: .reloadIgnoringLocalCacheData)
         }
     }
 
