@@ -29,6 +29,7 @@
 		4EFCD1F42A040872004F87BE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F32A040872004F87BE /* Reachability.swift */; };
 		4EFCD1F62A04F308004F87BE /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F52A04F308004F87BE /* CacheManager.swift */; };
 		4EFCD1F82A06DD06004F87BE /* CachedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F72A06DD06004F87BE /* CachedType.swift */; };
+		4EFCD1FA2A082113004F87BE /* PhotoListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F92A082113004F87BE /* PhotoListVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		4EFCD1F32A040872004F87BE /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4EFCD1F52A04F308004F87BE /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		4EFCD1F72A06DD06004F87BE /* CachedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedType.swift; sourceTree = "<group>"; };
+		4EFCD1F92A082113004F87BE /* PhotoListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		4EFCD1E02A0280E6004F87BE /* photos */ = {
 			isa = PBXGroup;
 			children = (
+				4EFCD1F92A082113004F87BE /* PhotoListVM.swift */,
 			);
 			path = photos;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				4EFCD1F62A04F308004F87BE /* CacheManager.swift in Sources */,
 				4E3390BC2A00F27100992071 /* Lesson.swift in Sources */,
 				4EFCD1F22A029748004F87BE /* PhotoListService.swift in Sources */,
+				4EFCD1FA2A082113004F87BE /* PhotoListVM.swift in Sources */,
 				4EFCD1E72A028173004F87BE /* NetworkError.swift in Sources */,
 				4E9B42BE2998372000FB464D /* PhotoLessonsApp.swift in Sources */,
 				4EFCD1DB2A02809D004F87BE /* HTTPRequestMethod.swift in Sources */,

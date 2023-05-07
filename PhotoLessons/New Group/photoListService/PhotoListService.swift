@@ -33,7 +33,7 @@ final class PhotoListService: PhotoListProtocol {
            } else {
                // The cached data doesn't exist, do nothing.
                // print("Cached data not found.")
-               self.photosResponseSubject.send(PhotoStoreResult(dataType: .cached, lessonList: [], error: nil))
+               self.photosResponseSubject.send(PhotoStoreResult(dataType: .noData, lessonList: [], error: nil))
            }
     }
 
