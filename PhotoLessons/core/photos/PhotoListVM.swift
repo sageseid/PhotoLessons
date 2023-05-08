@@ -65,6 +65,8 @@ final class PhotoListVM: ObservableObject {
     }
     
     func bindStore() {
+        self.isLoading = true
+        
         photosStore.photosResponseSubject
             .sink { [weak self] (completion) in
                 switch completion {
