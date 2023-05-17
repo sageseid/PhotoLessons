@@ -30,6 +30,7 @@ struct Endpoints {
         func createUrl() -> URLRequest {
             return URLRequest(httpMethod: .get, path: "\(path)/\(path2)", timeOut: 60.0, cache: .returnCacheDataElseLoad)//, queries: ["page": page])
         }
+        
     }
     
     
