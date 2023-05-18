@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2303632A16C66100E46012 /* OfflineBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2303622A16C66100E46012 /* OfflineBarView.swift */; };
+		4E2303652A16E2AC00E46012 /* LessonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2303642A16E2AC00E46012 /* LessonDetailViewController.swift */; };
 		4E3390BC2A00F27100992071 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3390BB2A00F27100992071 /* Lesson.swift */; };
 		4E9B42BE2998372000FB464D /* PhotoLessonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B42BD2998372000FB464D /* PhotoLessonsApp.swift */; };
 		4E9B42C02998372000FB464D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B42BF2998372000FB464D /* ContentView.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E2303622A16C66100E46012 /* OfflineBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineBarView.swift; sourceTree = "<group>"; };
+		4E2303642A16E2AC00E46012 /* LessonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailViewController.swift; sourceTree = "<group>"; };
 		4E3390BB2A00F27100992071 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		4E9B42BA2998372000FB464D /* PhotoLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9B42BD2998372000FB464D /* PhotoLessonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLessonsApp.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 			children = (
 				4EFCD1EB2A029154004F87BE /* NetworkMonitor.swift */,
 				4EFCD1F32A040872004F87BE /* Reachability.swift */,
+				4E2303622A16C66100E46012 /* OfflineBarView.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 		4EFCD1E12A0280ED004F87BE /* photodetails */ = {
 			isa = PBXGroup;
 			children = (
+				4E2303642A16E2AC00E46012 /* LessonDetailViewController.swift */,
 			);
 			path = photodetails;
 			sourceTree = "<group>";
@@ -400,9 +406,11 @@
 				4EFCD1DF2A0280D5004F87BE /* Endpoint.swift in Sources */,
 				4EFCD1EE2A029644004F87BE /* PhotoListProtocol .swift in Sources */,
 				4EFCD1EA2A02818B004F87BE /* NetworkManager.swift in Sources */,
+				4E2303632A16C66100E46012 /* OfflineBarView.swift in Sources */,
 				4EFCD1D92A028086004F87BE /* Constants .swift in Sources */,
 				4EFCD1DD2A0280C0004F87BE /* URLRequest+init.swift in Sources */,
 				4EFCD1F42A040872004F87BE /* Reachability.swift in Sources */,
+				4E2303652A16E2AC00E46012 /* LessonDetailViewController.swift in Sources */,
 				4E9B42C02998372000FB464D /* ContentView.swift in Sources */,
 				4EFCD1F62A04F308004F87BE /* CacheManager.swift in Sources */,
 				4E3390BC2A00F27100992071 /* Lesson.swift in Sources */,
