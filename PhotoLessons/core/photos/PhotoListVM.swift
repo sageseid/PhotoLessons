@@ -54,33 +54,37 @@ final class PhotoListVM: ObservableObject {
     
     init(photosStore: PhotoListProtocol = PhotoListService()) {
         self.photosStore = photosStore
-        
+        photosStore.fetchLessonsList()
         showOfflineView.assign(to: &self.$isOffline)
         showNoDataLabel.assign(to: &self.$showNoData)
         
-
+  
+      
         
         bindStore()
-    
+  
     }
     
     func bindStore() {
         self.isLoading = true
-        
+
         photosStore.photosResponseSubject
             .sink { [weak self] (completion) in
                 switch completion {
                 case .finished: break
                 case .failure(let error):
                     self?.error = error
+                    print("error")
                 }
             } receiveValue: { [weak self] (lessonsStoreResult) in
                 self?.isLoading = false
                 self?.isRefreshing = false
                 self?.dataType = lessonsStoreResult.dataType
+                print("data")
+                print(lessonsStoreResult.dataType)
                 self?.lessonslist = lessonsStoreResult.lessonList!
-                
             }.store(in: &cancellableSet)
+        
     }
     
     

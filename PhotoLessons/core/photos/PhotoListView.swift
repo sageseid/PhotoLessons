@@ -28,14 +28,14 @@ struct PhotoListView: View {
                 ProgressView()
                     .frame(width: 50, height: 50)
             } else if viewModel.isOffline {
-                    OfflineBarView()
-                } 
+                OfflineBarView()
+            } else {
                 
                 List {
                     ForEach(Array(viewModel.lessonslist.enumerated()), id: \.offset) { index, lesson in
                         // TODO: When touch the row, the background color should change
                         ZStack {
-                            NavigationLink(destination: LessonDetailViewControllerWrapper(index: index, lessons: lessons)) {
+                            NavigationLink(destination: LessonDetailViewControllerWrapper(index: index, lessons: viewModel.lessonslist)) {
                                 EmptyView()
                             }
                             
@@ -58,13 +58,14 @@ struct PhotoListView: View {
                 .onAppear{}
                 .navigationTitle("Lessons")
                 .scrollContentBackground(.hidden)
+                
             }
         }
     }
-    
+}
     struct PhotoListView_Previews: PreviewProvider {
         static var previews: some View {
             PhotoListView()
         }
     }
-}
+
